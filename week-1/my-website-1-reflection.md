@@ -1,4 +1,4 @@
-My website ttalhuk.github.io
+My website ttalhouk.github.io
 
 *Explain how to create a repository on GitHub and clone the repository to your local computer to a non-technical person.*
 
