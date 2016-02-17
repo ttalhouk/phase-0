@@ -1,4 +1,4 @@
-![alt text](week-2/imgs/site-map.gif "Site Map")
+![alt text](../blob/master/imgs/site-map.gif "Site Map")
 
 **Overall Reflections**
 
