@@ -1,4 +1,5 @@
 ![alt text](../week-2/imgs/wireframe-index.png "Index Wireframe")
+
 ![alt text](../week-2/imgs/wireframe-blog-index.png "Blog Wireframe")
 
 **Overall Reflections**
