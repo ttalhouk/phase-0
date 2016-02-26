@@ -1,0 +1,72 @@
+html{
+  color: #000080;
+  background-color: #FFFFFF;
+}
+a:link{
+  color: #800080;
+}
+a:visited{
+  color: #FF0000;
+}
+article{
+  width: 48%;
+  margin: 1%;
+  float: left;
+}
+h1{
+  font-weight: bold;
+  font-size: 24px;
+  white-space: pre-wrap;
+}
+header{
+  text-align: center;
+  border-bottom: 1px solid;
+}
+
+span{
+  font-size: 200%;
+}
+
+footer{
+  clear: both;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.geico{
+  clear: both;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  text-align: center;
+}
+img{
+  height: 50%;
+  width: 50%;
+}
+
+li{
+  font-size: 75%;
+  color: black;
+  padding: 2%;
+}
+/*
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+When linking to the external file you have to include the path using the href, the type of document (css in this case)
+and rel or relationship to the html file (stylesheet in this case)
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+We floated the sections and shrunk their width down so they could fit next to each other.  We then had to clear the floats on the
+Geico section because it was wrapping around the left column.
+
+What CSS did you use to modify the element style (like size, color, etc.)
+color was used to change the text color, font-weight to change text bold, font-size to change the size of the letters.
+
+Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+We did have to add some classes to create the large letters.  :first-letter didn't quite work so we added a span to the first letter of each word.
+We tried many options but that was the only one that would work for us.
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+Compairing to the source code of the original site, we used much less HTML tags and didn't have to repeat the styling on each line, so our method was
+cleaner and would be easier to modify/update.
+
+*/
