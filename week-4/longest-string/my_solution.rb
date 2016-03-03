@@ -13,5 +13,13 @@
 
 # Your Solution Below
 def longest_string(list_of_words)
-  # Your code goes here!
+  i=0
+  long_string=list_of_words[0]
+  list_of_words.each do
+    if list_of_words[i].length>long_string.length
+      long_string=list_of_words[i]
+    end
+    i+=1
+  end
+  return long_string
 end
