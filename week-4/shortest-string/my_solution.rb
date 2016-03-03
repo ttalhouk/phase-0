@@ -1,6 +1,6 @@
 # Shortest String
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [by myself].
 
 # shortest_string is a method that takes an array of strings as its input
 # and returns the shortest string
@@ -12,5 +12,13 @@
 
 #Your Solution Below
 def shortest_string(list_of_words)
-  # Your code goes here!
+  i=0
+  short_string=list_of_words[0]
+  list_of_words.each do
+    if list_of_words[i].length<short_string.length
+      short_string=list_of_words[i]
+    end
+    i+=1
+  end
+  return short_string
 end
