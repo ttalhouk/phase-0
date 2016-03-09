@@ -32,7 +32,7 @@ def my_hash_finding_method(source, thing_to_find)
 =end
 
 
-  return source.select {|key,value| value==thing_to_find}.keys
+  return source.select {|key,value| value==thing_to_find}.keys #refactored
 
 
 end
