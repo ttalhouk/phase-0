@@ -6,7 +6,7 @@ Outputs: The output will be a hash that pairs each name with a group number
 
 1) Check if there are 8 or more names in the list
 2) If so take 5 names and place them into group 1 by assigning the value of group 1 to the name
-3) Increment the name counter
+3) remove the name from the list
 4) Repeat this process until there are less than 8.
 5) If 7 names then assign the next 4 names to a group otherwise the next 3.
 6) Repeat until list is empty
