@@ -67,7 +67,7 @@ Once you had written your pseudocode, were you able to easily translate it into 
 
 Was your initial solution successful at passing the tests? If so, why do you think that is? If not, what were the errors you encountered and what did you do to resolve them?
 Our code pased all but the non-destructive test.  We added some puts to test the object_id's and found they should be equal.  Looking
-at the rspec file it is asking for it to be non destructive but not equal.  Not sure what the problem is.
+at the rspec file it is asking for it to be non destructive but not equal.  Not sure what the problem is we tried mapping and replacing arrays.
 
 When you refactored, did you find any existing methods in Ruby to clean up your code?
 the fill command helped so we didn't have to iterate and manually fill in the array.
