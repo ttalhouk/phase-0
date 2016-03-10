@@ -54,7 +54,7 @@ I think so.  My original psudocode was pretty much the same as when I went to co
 
 Was your approach for automating this task a good solution? What could have made it even better?
 
-My approch is can be used for any lenght of string as I tried varing the lenghts and it will accomodate any lenght with 
+My approch is can be used for any length of string as I tried varing the lengths and it will accomodate any lenght with 
 a minimum group size of 3 and max of 5.  The if statements are a bit wonky and there is probably a better method for that
 but I couldn't find it.
 
