@@ -6,7 +6,7 @@ Outputs: The output will be a hash that pairs each name with a group number
 
 1) Check if there are 8 or more names in the list
 2) If so take 5 names and place them into group 1 by assigning the value of group 1 to the name
-3) Increment the name counter
+3) remove the name from the list
 4) Repeat this process until there are less than 8.
 5) If 7 names then assign the next 4 names to a group otherwise the next 3.
 6) Repeat until list is empty
@@ -54,7 +54,7 @@ I think so.  My original psudocode was pretty much the same as when I went to co
 
 Was your approach for automating this task a good solution? What could have made it even better?
 
-My approch is can be used for any lenght of string as I tried varing the lenghts and it will accomodate any lenght with 
+My approch is can be used for any length of string as I tried varing the lengths and it will accomodate any lenght with 
 a minimum group size of 3 and max of 5.  The if statements are a bit wonky and there is probably a better method for that
 but I couldn't find it.
 
