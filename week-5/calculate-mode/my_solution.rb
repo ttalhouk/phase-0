@@ -27,7 +27,7 @@
 
 # 1. Initial Solution
 
-=begin
+=begin  /Using 2 arrays to find Mode/
 
 
 def mode(input)
@@ -57,6 +57,7 @@ end
 =end
 
 # 3. Refactored Solution
+=begin  /using 2 arrays to find mode simplified/
 
 def mode(input)
   freq=Array.new(input.length).fill(0)
@@ -75,6 +76,28 @@ def mode(input)
     position+=1
   end
   return array.uniq
+end
+=end
+
+
+
+def mode(input) # a refacored hash method of finding the mode
+  freq={}
+  input.each do |x|
+    freq[x]=input.count(x)
+  end
+
+  max_freq=freq.values.max
+
+=begin # refactored using .values.max
+  freq.each_value do |f|
+    if f > max_freq
+      max_freq=f
+    end
+  end
+=end
+
+  return freq.select {|key,value| value==max_freq}.keys
 end
 
 
@@ -97,6 +120,16 @@ initialize as nil.  Had to make them = 0 then it worked
 What methods did you use to iterate through the content? Did you find any good ones when you were refactoring? Were they difficult to implement?
 when refactoring we found a method to count instances in an array called....  .count(value) this is perfect for frequencies but resulted in 
 duplicate values since we didn't ittereate forward to exclude duplicates.  We then found the uniq method which solved that issue.
+
+
+**** update ****
+
+Worked on creating a method that uses hashes.  It seems there should be a more elegant way of determining the maximum value, but this worked
+for hashes.  Added to the solution file.
+
+**** update 2 ****
+
+Found refactored method for finding the max frequency.
 
 
 =end
