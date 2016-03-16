@@ -48,21 +48,44 @@ class BingoBoard
   attr_writer :bingo_title
 
   def bingo_call
-    @spot=[rand(0..4),rand(0..100)]
+    @spot=[rand(0..4),rand(1..99)]
     puts @bingo_title[@spot[0]]+@spot[1].to_s
+    board_check
   end
 
   def board_check
     position=0
-    @bingo_board[spot[0]].each do |number|
+    @bingo_board[@spot[0]].each do |number|
       if number == @spot[1]
-        @bingo_board[position] = " X"
+        @bingo_board[position] = "X"
       end
       position += 1
     end
-        
+    print_board
   end
-
+  
+  def print_board
+    @bingo_title.each do |let|
+      print "|  "+let+" |"
+    end
+    puts
+    row = 0
+    while row <= 4 do
+      @bingo_board.each do |col|
+        print "| "
+        if col[row].is_a?(String)
+          print " "
+        elsif col[row] < 10
+          print " "
+        end
+        
+        print col[row].to_s + " |"
+      end
+      puts
+      row += 1
+    end
+  end
+      
 end
 
 # Refactored Solution
@@ -77,6 +100,12 @@ board = [[47, 44, 71, 8, 88],
         [75, 70, 54, 80, 83]]
 
 new_game = BingoBoard.new(board)
+
+new_game.bingo_call
+new_game.bingo_call
+new_game.bingo_call
+new_game.bingo_call
+new_game.bingo_call
 
 
 #Reflection
