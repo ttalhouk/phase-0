@@ -21,8 +21,10 @@ def group_maker(names)
   while names.length>0
     if names.length>=8
       x=5
-    elsif names.length==7
+    elsif names.length==4
       x=4
+    elsif names.length < 3
+      x= names.length
     else
       x=3
     end
