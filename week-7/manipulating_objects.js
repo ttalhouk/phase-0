@@ -16,11 +16,21 @@ var terah = {
 // __________________________________________
 // Write your code below.
 
+var adam = {};
 
-
-
-
-
+adam.name = "Adam";
+terah.spouse = adam;
+terah.weight = 125;
+delete terah.eyeColor;
+adam.spouse = terah;
+terah.children = {};
+terah.children.carson = {};
+terah.children.carson.name = "Carson";
+terah.children.carter = {};
+terah.children.carter.name = "Carter";
+terah.children.colton = {};
+terah.children.colton.name = "Colton";
+adam.children = terah.children;
 
 
 
@@ -28,13 +38,27 @@ var terah = {
 
 // __________________________________________
 // Reflection: Use the reflection guidelines
-//
-//
-//
-//
-//
-//
+/*
 
+What tests did you have trouble passing? What did you do to make it pass? Why did that work?
+- For this challenge I didn't have much trouble, the eloquent javascript book covers how to 
+manipulate objects fairly clearly. Each add was pretty much the same.
+
+How difficult was it to add and delete properties outside of the object itself?
+- Not too difficult.  Adding key-value pairs is like adding a value to any variable, the
+only trick is to use the dot to call the object.
+
+What did you learn about manipulating objects in this challenge?
+- This challenge solidified my understanding of how to call objects or parts within
+them without physically changing their original definition.  This shows how you can
+make an object symantically which helps readablity.
+For instance:
+
+It is easy to tell that terah.children.carson.name is asking for:
+
+The name of Terahs child carson.
+
+*/
 
 // __________________________________________
 // Driver Code:  Do not alter code below this line.
