@@ -8,8 +8,8 @@ var number = 4;
 number = number * 2;
 
 
-// var fav = prompt("What's your favorite food");
-// alert (fav + "! !hat's mine too!");
+//var fav = prompt("What's your favorite food");
+//alert (fav + "! !hat's mine too!");
 
 
 // Complete one of the exercises: Looping a Triangle, FizzBuzz, or Chess Board
