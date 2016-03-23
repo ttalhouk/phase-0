@@ -35,3 +35,10 @@ function minimum(num1, num2){
 // Data Structures: Objects and Arrays
 // Create an object called "me" that stores your name, age, 3 favorite foods, and a quirk below.
 
+var me = {
+  name: "Talal",
+  age: 37,
+  favFood: ["tabouli", "spaghetti", "pizza"],
+  quirk: "Loves spicy food... Really spicy!",
+};
+
