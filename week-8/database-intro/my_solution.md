@@ -34,7 +34,7 @@ the methods used in this excersise to do sql searches.
 10)`select regions.region_name, states.state_name from regions inner join states on regions.id = states.region_id order by states.region_id;`
 
 
-![alt text](../imgs/schema8_4.jpg "schema 8.4")
+![alt text](../imgs/schema8_4.JPG "schema 8.4")
 
 
 
