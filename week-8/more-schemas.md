@@ -22,7 +22,7 @@ I think I would be able to figure out the way it should be structured.
 
 Schemas
 
-![alt text](/imgs/many2many.JPG "M2M schema 8.5")
+![alt text](imgs/many2many.JPG "M2M schema 8.5")
 
 
-![alt text](/imgs/one2one.JPG "O2O schema 8.5")
+![alt text](imgs/one2one.JPG "O2O schema 8.5")
