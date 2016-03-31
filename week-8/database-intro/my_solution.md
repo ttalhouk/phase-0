@@ -23,14 +23,23 @@ the methods used in this excersise to do sql searches.
 #Calls in SQL excersise#
 
 1)`SELECT * FROM states;`
+
 2)`select * from regions;`
+
 3)`select state_name, population from states;`
+
 4)`select state_name, population from states order by population desc;`
+
 5)`select state_name from states where region_id = 7;`
+
 6)`select state_name, population_density from states where population_density>50 order by population_density asc;`
+
 7)`select state_name from states where population between 1000000 and  1500000`
+
 8)`select state_name, region_id from states order by region_id asc;`
+
 9)`select region_name from regions where region_name like '%Central%';`
+
 10)`select regions.region_name, states.state_name from regions inner join states on regions.id = states.region_id order by states.region_id;`
 
 
