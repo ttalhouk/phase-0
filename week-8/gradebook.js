@@ -1,7 +1,7 @@
 /*
 Gradebook from Names and Scores
-I worked on this challenge [by myself, with:]
-This challenge took me [#] hours.
+I worked on this challenge [by myself, with: John C]
+This challenge took me [1] hours.
 You will work with the following two variables.  The first, students, holds the names of four students.
 The second, scores, holds groups of test scores.  The relative positions of elements within the two
 variables match (i.e., 'Joseph' is the first element in students; his scores are the first value in scores.).
@@ -23,16 +23,73 @@ var scores = [ [80, 70, 70, 100],
 // __________________________________________
 // Write your code below.
 
+// var gradebook = {};
+// gradebook[students[0]]={};
+// gradebook[students[1]]={};
+// gradebook[students[2]]={};
+// gradebook[students[3]]={};
+
+// var index = 0;
+// for (var name in gradebook){
+//   gradebook[name].testScores =[];
+//   gradebook[name].testScores = scores[index];
+//   index++;
+// }
 
 
+// gradebook.addScore = function(name, scorearguments){
+//   gradebook[name].testScores.push(scorearguments);
+// };
 
+// gradebook.getAverage = function(name){
+//   return average(gradebook[name].testScores);
+// };
 
-
+// function average(array){
+//   var sum = 0;
+//   array.forEach(function(element){
+//     sum +=element;
+//   });
+//   return (sum/array.length);
+// }
 
 
 // __________________________________________
 // Refactored Solution
+var gradebook = {};
+// gradebook[students[0]]={};
+// gradebook[students[1]]={};
+// gradebook[students[2]]={};
+// gradebook[students[3]]={};
+ 
+students.forEach(function(name){
+  gradebook[name]={};
+});
 
+var index = 0;
+for (var name in gradebook){
+  gradebook[name].testScores =[];
+  gradebook[name].testScores = scores[index];
+  index++;
+}
+
+gradebook.addScore = function(name, scorearguments){
+  gradebook[name].testScores.push(scorearguments);
+};
+
+gradebook.getAverage = function(name){
+  return average(gradebook[name].testScores);
+};
+
+function average(array){
+  var sum = 0;
+  array.forEach(function(element){
+    sum += element;
+  });
+  return (sum/array.length);
+}
+
+console.log(gradebook);
 
 
 
