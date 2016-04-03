@@ -100,13 +100,19 @@ console.log(gradebook);
 // __________________________________________
 // Reflect
 
+// What did you learn about adding functions to objects?
+
+// - I had used functions in my objects for the game I made last week, but this was a good
+// example of how to do it with arguments being passed.
+
+// How did you iterate over nested arrays in JavaScript?
+// -I did not really need to itterate in nested arrays for this challenge as the input was 
+// only one level deep.  However, one could do this by calling a .forEach on every array within an array if needed.
 
 
-
-
-
-
-
+// Were there any new methods you were able to incorporate? If so, what were they and how did they work?
+// Using for... in... was helpful in initializing the gradebook testScores.  It was useful for iterating through
+// an object.  
 
 // __________________________________________
 // Test Code:  Do not alter code below this line.
